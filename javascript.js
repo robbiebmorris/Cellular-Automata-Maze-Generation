@@ -53,7 +53,6 @@ var countNeighbors = (grid, x, y) => {
   for (var i = -1; i < 2; i++) {
     for (var j = -1; j < 2; j++) {
       const row = (x + i + numOfRows) % numOfRows;
-      //had stupid error here with y mistyped as x- maybe put in video
       const col = (y + j + numOfCols) % numOfCols;
       sum += grid[row][col];
     }
