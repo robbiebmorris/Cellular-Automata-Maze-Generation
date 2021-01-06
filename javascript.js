@@ -36,7 +36,7 @@ var getNextGen = (grid) => {
       var neighbors = countNeighbors(grid, i, j);
       if (value === 0 && neighbors === 3) {
         nextGrid[i][j] = 1;
-      } else if ((value === 1) && (neighbors < 1 || neighbors > 4)) {
+      } else if (value === 1 && neighbors > 4) {
         nextGrid[i][j] = 0; 
       } else {
         nextGrid[i][j] = value;
